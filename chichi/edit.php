@@ -5,7 +5,7 @@ session_start();
 if(!isset($_SESSION['loggedin'])||($_SESSION['loggedin']!=md5($_SESSION['name'])))
 	{
 	session_destroy();
-	header("Location: http://localhost/outface/loggedout.php");
+	header("Location: /loggedout.php");
 	exit();
 	}
 ?>
@@ -93,7 +93,7 @@ require('db_connect.php');
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="http://localhost/outface/logout.php" class="btn btn-default btn-flat">Log out</a>
+                  <a href="/logout.php" class="btn btn-default btn-flat">Log out</a>
                 </div>
               </li>
             </ul>
