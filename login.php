@@ -115,7 +115,7 @@ require('db_connect.php');
 				
 				
 				//redirect to dashboard
-				header("Location: http://localhost/outface/home.php");
+				header("Location: /home.php");
 				//exit script
 				exit();
 				}

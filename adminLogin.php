@@ -110,7 +110,7 @@ require('db_connect.php');
 				
 				
 				//redirect to dashboard
-				header("Location: http://localhost/outface/chichi/home.php");
+				header("Location: /chichi/home.php");
 				//exit script
 				exit();
 				}

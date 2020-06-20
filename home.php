@@ -5,7 +5,7 @@ session_start();
 if(!isset($_SESSION['loggedin'])||($_SESSION['loggedin']!=md5($_SESSION['name'])))
 	{
 	session_destroy();
-	header("Location: http://localhost/outface/loggedout.php");
+	header("Location: /loggedout.php");
 	exit();
 	}
 ?>
@@ -119,7 +119,7 @@ if(isset($_POST['submitted'])&&($_POST['submitted']=='Yes'))
 		$rinsm= mysqli_query($dbhandle, $qinsm);
 		echo $maidID." ";
 		}
-	header("Location: http://localhost/outface/profileList.php");
+	header("Location: /profileList.php");
 	}
 	
 	$qch= "SELECT * FROM orders WHERE app_code='$appCode'";

@@ -5,7 +5,7 @@ session_start();
 if(!isset($_SESSION['loggedin'])||($_SESSION['loggedin']!=md5($_SESSION['name'])))
 	{
 	session_destroy();
-	header("Location: http://localhost/outface/loggedout.php");
+	header("Location: /loggedout.php");
 	exit();
 	}
 ?>
