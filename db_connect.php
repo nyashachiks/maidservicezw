@@ -1,7 +1,7 @@
 <?php
-$username = "maidservicezw";
+$username = "maidservice";
 $password = "o@4DgGhbnb%DCWt@";
-$hostname = "localhost";
+$hostname = "srv-captain--mysql-db";
 
 //connection to the database
 $dbhandle = mysqli_connect($hostname, $username, $password)
@@ -9,6 +9,6 @@ $dbhandle = mysqli_connect($hostname, $username, $password)
 echo "";
 
 //select a database to work with
-$selected = mysqli_select_db($dbhandle, "maidservicezw")
+$selected = mysqli_select_db($dbhandle, "maidservice")
   or die("Could not select database");
 ?>
